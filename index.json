@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-22",
+  "tools": [
+    {
+      "id": "json-to-yaml",
+      "name": "JSON 转 YAML",
+      "slug": "json-to-yaml",
+      "category": "converter",
+      "tags": ["json", "yaml", "converter", "developer"],
+      "author": "JustHTMLs",
+      "authorUrl": "https://github.com/justhtmls",
+      "version": "1.0.0",
+      "description": "将 JSON 格式转换为 YAML 格式的在线工具，支持复制到剪贴板",
+      "longDescription": "这是一个轻量级的 JSON 到 YAML 转换工具。直接在浏览器中处理数据，无需服务器，保护您的隐私。",
+      "icon": "🔄",
+      "color": "#3498db",
+      "entry": "tools/json-to-yaml/app.html",
+      "detail": "tools/json-to-yaml/index.html",
+      "createdAt": "2025-12-22",
+      "updatedAt": "2025-12-22",
+      "featured": true,
+      "repo": "https://github.com/justhtmls/justhtmls.github.io"
+    }
+  ],
+  "categories": [
+    {
+      "id": "converter",
+      "name": "格式转换",
+      "icon": "🔄",
+      "description": "各种文件和数据格式之间的转换工具"
+    },
+    {
+      "id": "developer",
+      "name": "开发者工具",
+      "icon": "👨‍💻",
+      "description": "面向开发者的实用工具集合"
+    },
+    {
+      "id": "text",
+      "name": "文本处理",
+      "icon": "📝",
+      "description": "文本编辑、格式化和处理工具"
+    },
+    {
+      "id": "image",
+      "name": "图片处理",
+      "icon": "🖼️",
+      "description": "图片编辑、转换和优化工具"
+    },
+    {
+      "id": "utility",
+      "name": "实用工具",
+      "icon": "🧰",
+      "description": "日常生活中的实用小工具"
+    }
+  ]
+}

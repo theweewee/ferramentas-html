@@ -1,0 +1,30 @@
+# GitHub Pages 部署配置
+
+将此仓库部署到 GitHub Pages：
+
+## 配置步骤
+
+1. 进入仓库的 **Settings** > **Pages**
+2. 在 **Source** 下选择 **Deploy from a branch**
+3. 选择 **main** 分支和 **/ (root)** 目录
+4. 点击 **Save**
+
+## 访问地址
+
+部署完成后，你的网站将在以下地址可用：
+
+```
+https://yourusername.github.io/just-htmls/
+```
+
+## 自定义域名（可选）
+
+如果你想使用自定义域名：
+
+1. 在仓库根目录创建 `CNAME` 文件
+2. 文件内容填写你的域名，如 `tools.example.com`
+3. 在你的域名 DNS 设置中添加 CNAME 记录指向 `yourusername.github.io`
+
+## 构建说明
+
+本项目是纯静态网站，无需构建步骤。直接推送代码即可自动部署。

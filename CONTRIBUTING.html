@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贡献指南 - JustHTMLs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --bg: #0f172a;
+            --bg-card: #1e293b;
+            --bg-hover: #334155;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
+        /* Content */
+        main {
+            padding: 40px 20px 80px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 40px 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 24px 0 12px;
+            color: var(--primary);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        code {
+            background: var(--bg-hover);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 13px;
+            color: #a5b4fc;
+        }
+
+        pre {
+            background: var(--bg-hover);
+            border-radius: 8px;
+            padding: 16px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: var(--text);
+        }
+
+        .example-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .example-box h4 {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .warning {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        .warning strong {
+            color: #f59e0b;
+        }
+
+        .warning p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .step {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    返回首页
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>贡献指南</h1>
+        <p>感谢你有兴趣为 JustHTMLs 做出贡献！我们欢迎各种形式的贡献，包括新工具、错误修复和文档改进。</p>
+
+        <div class="warning">
+            <strong><i class="fas fa-exclamation-triangle"></i> 重要提示</strong>
+            <p>所有工具提交必须通过 GitHub Issues 进行。我们会在审核通过后，由维护者将代码合并到主仓库。</p>
+        </div>
+
+        <h2><i class="fas fa-rocket"></i> 如何贡献新工具</h2>
+
+        <h3>1. 工具设计原则</h3>
+        <p>在开始之前，请确保你的工具符合以下设计原则（基于 <a href="https://simonwillison.net/2025/Dec/10/html-tools/" target="_blank" style="color: var(--primary);">Simon Willison's HTML Tools</a>）：</p>
+        <ul>
+            <li><strong>单文件 HTML</strong> - 所有 HTML、CSS 和 JavaScript 都在一个文件中</li>
+            <li><strong>无构建步骤</strong> - 不使用 React、JSX 或需要编译的技术</li>
+            <li><strong>CDN 依赖</strong> - 如需第三方库，从 CDN 加载</li>
+            <li><strong>保持精简</strong> - 代码量控制在几百行以内，便于维护和理解</li>
+            <li><strong>隐私优先</strong> - 数据在浏览器本地处理，不发送到服务器</li>
+        </ul>
+
+        <h3>2. 创建工具文件夹</h3>
+        <p>在 <code>tools</code> 目录下创建一个新的文件夹，文件夹名称使用小写字母和连字符，例如 <code>json-to-yaml</code>。</p>
+
+        <h3>3. 创建必需文件</h3>
+        <p>每个工具必须包含以下三个文件：</p>
+
+        <div class="example-box">
+            <h4>工具目录结构示例</h4>
+            <pre><code>tools/
+  └── json-to-yaml/
+      ├── index.html       # 工具详情页（介绍页面）
+      ├── app.html         # 工具实体页（实际运行的工具）
+      └── tool.json        # 工具元数据（可选，用于扩展信息）</code></pre>
+        </div>
+
+        <h3>4. 编写工具代码</h3>
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <p><strong>创建 app.html</strong> - 这是工具的核心功能页面，应该是一个完全独立的 HTML 文件，包含所有内联的 CSS 和 JavaScript。</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <p><strong>创建 index.html</strong> - 这是工具的介绍页面，用于展示工具的功能、使用方法、作者信息等。</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <p><strong>测试工具</strong> - 在浏览器中直接打开 app.html，确保所有功能正常工作。</p>
+            </div>
+        </div>
+
+        <h3>5. 提交工具</h3>
+        <p>通过 GitHub Issues 提交你的工具：</p>
+        <ol>
+            <li>点击下方按钮创建新的 Issue</li>
+            <li>选择"工具提交"模板</li>
+            <li>填写工具信息</li>
+            <li>将工具代码完整粘贴到 Issue 中（或提供 Gist 链接）</li>
+            <li>等待维护者审核</li>
+        </ol>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="https://github.com/justhtmls/justhtmls.github.io/issues/new?template=tool-submission.md" class="btn" target="_blank">
+                <i class="fas fa-plus"></i>
+                创建工具提交 Issue
+            </a>
+        </div>
+
+        <h2><i class="fas fa-file-code"></i> 工具元数据规范</h2>
+        <p>提交工具时，请在 Issue 中提供以下信息：</p>
+
+        <div class="example-box">
+            <h4>必需信息</h4>
+            <ul>
+                <li><strong>工具 ID</strong> - 唯一标识符（如：json-to-yaml）</li>
+                <li><strong>工具名称</strong> - 显示名称（如：JSON 转 YAML）</li>
+                <li><strong>分类</strong> - 选择一个现有分类或建议新分类</li>
+                <li><strong>标签</strong> - 3-5个相关标签</li>
+                <li><strong>简短描述</strong> - 一句话描述工具功能</li>
+                <li><strong>详细描述</strong> - 详细说明工具用途和特点</li>
+                <li><strong>图标</strong> - 选择一个 Emoji 作为工具图标</li>
+                <li><strong>颜色</strong> - 主题颜色（如：#6366f1）</li>
+                <li><strong>作者信息</strong> - 名称和 GitHub/个人链接</li>
+            </ul>
+        </div>
+
+        <h2><i class="fas fa-list"></i> 工具分类</h2>
+        <p>当前支持的分类：</p>
+        <ul>
+            <li><strong>converter</strong> - 格式转换工具</li>
+            <li><strong>developer</strong> - 开发者工具</li>
+            <li><strong>text</strong> - 文本处理工具</li>
+            <li><strong>image</strong> - 图片处理工具</li>
+            <li><strong>utility</strong> - 实用工具</li>
+        </ul>
+
+        <h2><i class="fas fa-code-branch"></i> 组织架构</h2>
+        <p>JustHTMLs 采用 GitHub 组织进行管理：</p>
+        <ul>
+            <li><strong>justhtmls/justhtmls.github.io</strong> - 主网站仓库</li>
+            <li><strong>justhtmls/tools</strong> - 工具集合仓库（可选）</li>
+            <li><strong>justhtmls/docs</strong> - 文档仓库（可选）</li>
+        </ul>
+
+        <h2><i class="fas fa-code-branch"></i> 工作流程</h2>
+        <p>工具提交流程：</p>
+        <ol>
+            <li>开发者按规范创建工具文件夹和文件</li>
+            <li>通过 GitHub Issues 提交工具到 justhtmls/justhtmls.github.io</li>
+            <li>维护者审核工具代码和功能</li>
+            <li>审核通过后，维护者将工具合并到主仓库</li>
+            <li>更新 index.json 索引文件</li>
+            <li>工具上线到 JustHTMLs 网站</li>
+        </ol>
+
+        <h2><i class="fas fa-bug"></i> 报告问题</h2>
+        <p>如果你发现了 Bug 或有改进建议：</p>
+        <ul>
+            <li>使用 GitHub Issues 报告问题</li>
+            <li>提供详细的复现步骤</li>
+            <li>附上截图或错误信息</li>
+        </ul>
+
+        <h2><i class="fas fa-heart"></i> 致谢</h2>
+        <p>感谢所有贡献者！你的贡献让 JustHTMLs 变得更加完善。</p>
+    </main>
+
+    <footer style="text-align: center; padding: 40px 0; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 60px;">
+        <p>&copy; 2025 JustHTMLs. 基于 <a href="https://simonwillison.net/2025/Dec/10/html-tools/" target="_blank" style="color: var(--text-muted);">Simon Willison's HTML Tools</a> 设计理念</p>
+    </footer>
+</body>
+</html>
