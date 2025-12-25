@@ -4,7 +4,7 @@
     <link rel="icon" href="../../favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>图片转 Base64 - JustHTMLs</title>
+    <title>图片 Base64 互转 - JustHTMLs</title>
     <link rel="canonical" href="https://www.htmls.dev/tools/image-to-base64/">
     <style>
         * {
@@ -112,22 +112,26 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>图片转 Base64</h1>
-            <p>将图片转换为 Base64 编码字符串</p>
+            <h1>图片 Base64 互转</h1>
+            <p>图片与 Base64 编码字符串之间的双向转换</p>
         </div>
 
         <div class="card">
             <h2>关于这个工具</h2>
-            <p>图片转 Base64 工具可以将图片文件转换为 Base64 编码的字符串。Base64 编码的图片可以直接嵌入 HTML、CSS 或 JavaScript 中，无需额外的 HTTP 请求。</p>
+            <p>图片 Base64 互转工具可以实现图片文件与 Base64 编码字符串之间的双向转换。Base64 编码的图片可以直接嵌入 HTML、CSS 或 JavaScript 中，无需额外的 HTTP 请求。同时也可以将 Base64 字符串还原为图片文件。</p>
 
             <h2>功能特点</h2>
             <ul class="features">
+                <li>支持图片转 Base64 编码</li>
+                <li>支持 Base64 字符串转回图片</li>
                 <li>支持拖拽上传图片</li>
                 <li>支持 JPG、PNG、GIF、WebP 等常见格式</li>
                 <li>实时预览图片</li>
                 <li>显示图片尺寸和文件大小信息</li>
                 <li>输出 Data URI 或纯 Base64 字符串</li>
+                <li>支持 Data URI 和纯 Base64 两种输入格式</li>
                 <li>一键复制或下载 Base64 数据</li>
+                <li>一键下载转换后的图片</li>
                 <li>完全在浏览器本地处理，保护隐私</li>
             </ul>
 
@@ -141,7 +145,7 @@
             </ul>
 
             <div style="margin-top: 30px;">
-                <a href="app.html" class="btn">开始使用</a>
+                <a href="./app.html" class="btn">开始使用</a>
                 <a href="https://github.com/justhtmls/html-tools/tree/main/tools/image-to-base64" target="_blank" class="btn btn-secondary">查看源码</a>
                 <a href="../../index.html" class="btn btn-secondary">返回首页</a>
             </div>
@@ -150,7 +154,7 @@
         <div class="card">
             <h2>快速预览</h2>
             <div class="preview">
-                <iframe src="app.html" loading="lazy"></iframe>
+                <iframe src="./app.html" loading="lazy"></iframe>
             </div>
         </div>
     </div>
