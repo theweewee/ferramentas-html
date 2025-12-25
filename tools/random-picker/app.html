@@ -163,28 +163,38 @@ Charlie"></textarea>
 
     <script>
         function pickRandomItems() {
-                const items = document.getElementById('picker-items').value.split(/?
-/).filter(Boolean);
-                const count = parseInt(document.getElementById('picker-count').value, 10) || 1;
-                const unique = document.getElementById('picker-unique').checked;
-                if (items.length === 0) {
-                    alert('请先输入列表');
-                    return;
-                }
-                const pool = [...items];
-                const result = [];
-                for (let i = 0; i < count && pool.length > 0; i++) {
-                    const index = Math.floor(Math.random() * pool.length);
-                    result.push(pool[index]);
-                    if (unique) pool.splice(index, 1);
-                }
-                document.getElementById('picker-output').value = result.join('
-');
+            const items = document.getElementById('picker-items').value.split(/\r?\n/).filter(Boolean);
+            const count = parseInt(document.getElementById('picker-count').value, 10) || 1;
+            const unique = document.getElementById('picker-unique').checked;
+
+            if (items.length === 0) {
+                alert('请先输入列表');
+                return;
+            }
+            if (count < 1) {
+                alert('抽取数量必须大于0');
+                return;
+            }
+            if (unique && count > items.length) {
+                alert(`列表中只有 ${items.length} 项，无法抽取 ${count} 个不重复项目`);
+                return;
             }
 
-            function clearOutput() {
-                document.getElementById('picker-output').value = '';
+            const pool = [...items];
+            const result = [];
+
+            for (let i = 0; i < count && pool.length > 0; i++) {
+                const index = Math.floor(Math.random() * pool.length);
+                result.push(pool[index]);
+                if (unique) pool.splice(index, 1);
             }
+
+            document.getElementById('picker-output').value = result.join('\n');
+        }
+
+        function clearOutput() {
+            document.getElementById('picker-output').value = '';
+        }
     </script>
 
     <script src="/assets/clicks.js" defer></script>

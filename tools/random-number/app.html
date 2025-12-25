@@ -169,13 +169,36 @@
     const max = parseInt(document.getElementById('random-max').value, 10);
     const count = parseInt(document.getElementById('random-count').value, 10) || 1;
     const unique = document.getElementById('random-unique').checked;
+
+    // 验证输入
+    if (isNaN(min) || isNaN(max) || isNaN(count)) {
+        alert('请输入有效的数字');
+        return;
+    }
     if (min > max) {
         alert('最小值不能大于最大值');
         return;
     }
+    if (count < 1) {
+        alert('数量必须大于0');
+        return;
+    }
+    if (count > 1000) {
+        alert('单次最多生成1000个随机数');
+        return;
+    }
+    if (unique && (max - min + 1) < count) {
+        alert(`范围 ${min}-${max} 内只有 ${max - min + 1} 个数字，无法生成 ${count} 个不重复的随机数`);
+        return;
+    }
+
     const results = [];
     const used = new Set();
-    while (results.length < count) {
+    let attempts = 0;
+    const maxAttempts = count * 100; // 防止无限循环
+
+    while (results.length < count && attempts < maxAttempts) {
+        attempts++;
         const num = Math.floor(Math.random() * (max - min + 1)) + min;
         if (unique) {
             if (used.has(num)) continue;
@@ -183,6 +206,12 @@
         }
         results.push(num);
     }
+
+    if (results.length < count) {
+        alert('生成随机数失败，请尝试增大范围或减少数量');
+        return;
+    }
+
     document.getElementById('random-output').value = results.join(', ');
 }
 
