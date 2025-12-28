@@ -1,301 +1,279 @@
-# JustHTMLs
+# Ferramentas HTML
 
 <div align="center">
 
-[![JustHTMLs Logo](https://img.shields.io/badge/JustHTMLs-HTML%20Tools-6366f1?style=for-the-badge)](https://htmls.dev/)
-[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/justhtmls/html-tools?style=for-the-badge)](https://github.com/justhtmls/html-tools)
+[![JUSTHTMLS](https://img.shields.io/badge/JUSTHTMLS-HTML%20TOOLS-green?style=for-the-badge)](https://htmls.dev/)
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
+[![MIT license](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
+[![STARS](https://img.shields.io/badge/Github%20Stars-86-blue?style=for-the-badge)](https://github.com/theweewee/ferramentas-html)
 
-**开源 HTML 工具集 - 轻量、隐私、无需安装**
+**Versão em Português (PT-BR) - Tradução Completa**
 
-[在线体验](https://htmls.dev/) | [贡献指南](CONTRIBUTING.md) | [提交工具](https://github.com/justhtmls/html-tools/issues/new?template=tool-submission.md)
+**Um conjunto de ferramentas HTML de código aberto - leve, limpa, gratuita, privada e sem necessidade de instalação**
 
-</div>
+[Experiência Online](https://htmls.dev/) | [Guia de Contribuição](./CONTRIBUTING.md) | [Enviar Ferramenta](https://github.com/justhtmls/html-tools/issues/new?template=tool-submission.md)
 
-![项目演示](https://piggo5.oss-cn-shenzhen.aliyuncs.com/2026/CleanShot%202025-12-23%20at%2014.24.34.gif)
+![Demonstração do Projeto](https://camo.githubusercontent.com/e1fc2f0b0279665762ff822d7a1e48a748d68edb6b60450a1b968decceb70be1/68747470733a2f2f706967676f352e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f323032362f436c65616e53686f74253230323032352d31322d3233253230617425323031342e32342e33342e676966)
 
----
+## Sobre o Projeto
 
-## 项目简介
+Ferramentas HTML é uma plataforma de código aberto que reúne um conjunto de ferramentas leves para uso online. Todas as ferramentas são arquivos HTML únicos, sem necessidade de instalação, prontas para usar. Os dados são processados localmente no navegador, protegendo sua privacidade.
 
-JustHTMLs 是一个开源的 HTML 工具集平台，汇集各种轻量级的在线工具。所有工具均为单文件 HTML，无需安装，打开即用，数据在浏览器本地处理，保护您的隐私。
+Comprometidos em construir o conjunto mais completo de ferramentas HTML.
 
-致力于打造最完整的中文 HTML 工具集合。
+## Características
 
-### 特点
+- **Design de Arquivo Único** - Todas as ferramentas são arquivos HTML independentes, com CSS e JavaScript integrados
+- **Sem Necessidade de Construção** - Não usa React/JSX, abra direto do navegador
+- **Privacidade em Primeiro Lugar** - Os dados são processados localmente, não são enviados para servidores
+- **Dependências Locais** - Bibliotecas de terceiros armazenadas em assets/vendor, funciona offline
+- **CDN Opcional** - CDN é prioritário, com fallback automático para recursos locais
+- **Código Aberto e Gratuito** - Licença MIT, contribuições são bem-vindas
 
-- **单文件设计** - 所有工具都是独立的 HTML 文件，内联 CSS 和 JavaScript
-- **无需构建** - 不使用 React/JSX，直接从浏览器打开
-- **隐私优先** - 数据在本地处理，不发送到服务器
-- **本地依赖** - 第三方库放入 assets/vendor，离线可用
-- **可选 CDN** - CDN 优先，失败自动回退到本地资源
-- **开源免费** - MIT 许可证，欢迎贡献
+## Categorias de Ferramentas
 
----
+| Categoria | Descrição | Quantidade |
+|-----------|-----------|----------|
+| Conversão de Formatos | Ferramentas para conversão entre vários formatos de arquivo e dados | - |
+| Ferramentas para Desenvolvedores | Conjunto de ferramentas práticas para desenvolvedores | - |
+| Processamento de Texto | Ferramentas para edição, formatação e processamento de texto | - |
+| Processamento de Imagem | Ferramentas para edição, conversão e otimização de imagens | - |
+| Ferramentas Úteis | Pequenas ferramentas úteis para a vida diária | - |
 
-## 工具分类
+## Lista de Ferramentas
 
-| 分类 | 描述 | 工具数量 |
-|------|------|----------|
-| 格式转换 | 各种文件和数据格式之间的转换工具 | - |
-| 开发者工具 | 面向开发者的实用工具集合 | - |
-| 文本处理 | 文本编辑、格式化和处理工具 | - |
-| 图片处理 | 图片编辑、转换和优化工具 | - |
-| 实用工具 | 日常生活中的实用小工具 | - |
+### Conversão de Formatos
 
----
+- Base32 Codificação / Decodificação
+- Base36 Codificação / Decodificação
+- Base58 Codificação / Decodificação
+- Base64 URL Codificação/Decodificação Segura
+- Base64 Codificação/Decodificação
+- CSV para JSON
+- CSV para TSV
+- CSV para YAML
+- Codificação/Decodificação HEX
+- Codificação/Decodificação de Entidades HTML
+- Escape de Strings JSON
+- Formatador JSON
+- JSON para CSV
+- JSON para TSV
+- JSON para XML
+- JSON para YAML
+- Conversor JSONL
+- TSV para CSV
+- TSV para JSON
+- Codificação/Decodificação de URL
+- Conversão de Timestamp Unix
+- XML para JSON
+- XML para YAML
+- YAML para CSV
+- YAML para JSON
+- YAML para XML
+- Validador YAML
+- Conversor de Sistemas Numéricos
 
-## 工具清单
+### Ferramentas para Desenvolvedores
 
-### 格式转换
-- Base32 编码
-- Base32 解码
-- Base36 编码
-- Base36 解码
-- Base58 编码
-- Base58 解码
-- Base64 URL 安全编码
-- Base64 URL 安全解码
-- Base64 编码解码
-- CSV 转 JSON
-- CSV 转 TSV
-- CSV 转 YAML
-- HEX 编码
-- HEX 解码
-- HTML 实体编码/解码
-- JSON 字符串转义
-- JSON 格式化工具
-- JSON 转 CSV
-- JSON 转 TSV
-- JSON 转 XML
-- JSON 转 YAML
-- JSONL 转换器
-- TSV 转 CSV
-- TSV 转 JSON
-- URL 编码解码
-- Unix 时间戳转换
-- XML 转 JSON
-- XML 转 YAML
-- YAML 转 CSV
-- YAML 转 JSON
-- YAML 转 XML
-- YAML 验证器
-- 进制转换工具
+- Compressor/Formatador CSS
+- Gerador de Expressões Cron
+- Gerador de Gitignore
+- Compressor HTML
+- Formatador HTML
+- Consulta de Códigos de Status HTTP
+- Compressor JSON
+- Ordenador de Chaves JSON
+- Gerador JWT
+- Decodificador JWT
+- Compressor JavaScript
+- Formatador JavaScript
+- Gerador de Meta Tags
+- Gerador NanoID
+- Gerador Robots.txt
+- Compressor SQL
+- Formatador SQL
+- Gerador de Sitemap
+- Gerador ULID
+- Gerador de Parâmetros de URL
+- Analisador de URL
+- Gerador UUID
+- Compressor XML
+- Formatador XML
+- Compressor YAML
+- Formatador YAML
+- Gerador de Hash
+- Testador de Expressões Regulares
+- Gerador de Cores Gradiente
+- Detector de Contraste de Cores
+- Seletor de Cores
 
-### 开发者工具
-- CSS 压缩/格式化工具
-- Cron 表达式生成器
-- Gitignore 生成器
-- HTML 压缩器
-- HTML 格式化工具
-- HTTP 状态码查询
-- JSON 压缩器
-- JSON 键名排序
-- JWT 生成器
-- JWT 解码器
-- JavaScript 压缩器
-- JavaScript 格式化工具
-- Meta 标签生成器
-- NanoID 生成器
-- Robots.txt 生成器
-- SQL 压缩器
-- SQL 格式化工具
-- Sitemap 生成器
-- ULID 生成器
-- URL 参数生成器
-- URL 解析器
-- UUID 生成器
-- XML 压缩器
-- XML 格式化工具
-- YAML 压缩器
-- YAML 格式化工具
-- 哈希生成器
-- 正则表达式测试器
-- 渐变色生成器
-- 颜色对比度检测
-- 颜色选择器
+### Processamento de Texto
 
-### 文本处理
-- Emoji 清理器
-- HTML 转 Markdown
-- HTML 转纯文本
-- JSON 转 Markdown 表格
-- Lorem Ipsum 生成器
-- Markdown 表格生成器
-- Markdown 转 HTML
-- Markdown 转纯文本
-- ROT13 编码
-- URL Slug 生成器
-- Unicode 反转义
-- Unicode 转义
-- 二进制转文本
-- 凯撒密码
-- 大小写转换工具
-- 字数统计工具
-- 摩斯电码编码
-- 摩斯电码解码
-- 文本分割器
-- 文本去重工具
-- 文本反转工具
-- 文本合并器
-- 文本对比工具
-- 文本换行器
-- 文本排序工具
-- 文本查找替换
-- 文本清理器
-- 文本缩进工具
-- 文本转 HTML
-- 文本转二进制
-- 行号添加器
-- 行尾符转换器
+- Limpador de Emoji
+- Conversor HTML para Markdown
+- Conversor HTML para Texto Puro
+- Gerador JSON para Tabela Markdown
+- Gerador Lorem Ipsum
+- Gerador de Tabela Markdown
+- Conversor Markdown para HTML
+- Conversor Markdown para Texto Puro
+- Codificação ROT13
+- Gerador de URL Slug
+- Reversão de Unicode
+- Escape de Unicode
+- Conversor de Binário para Texto
+- Cifra de César
+- Ferramenta de Conversão de Maiúsculas/Minúsculas
+- Contador de Palavras
+- Codificador de Código Morse
+- Decodificador de Código Morse
+- Divisor de Texto
+- Removedor de Duplicatas em Texto
+- Reversores de Texto
+- Mesclador de Texto
+- Ferramenta de Comparação de Texto
+- Embrulhador de Texto
+- Ferramenta de Ordenação de Texto
+- Ferramenta de Localizar e Substituir
+- Limpador de Texto
+- Ferramenta de Indentação de Texto
+- Conversor Texto para HTML
+- Conversor Texto para Binário
+- Adicionador de Números de Linha
+- Conversor de Terminações de Linha
 
-### 图片处理
-- 图片加水印
-- 图片压缩工具
-- 图片尺寸调整
-- 图片拼接
-- 图片旋转翻转
-- 图片滤镜
-- 图片裁剪
-- 图片转 Base64
-- 图片转 WebP
+### Processamento de Imagem
 
-### 实用工具
-- BMI 计算器
-- 二维码生成器
-- 单位换算器
-- 字节大小转换器
-- 安全密码生成器
-- 密码强度检测
-- 日期差值计算器
-- 百分比计算器
-- 随机抽取器
-- 随机数生成器
+- Adição de Marca d'Água em Imagem
+- Compressor de Imagem
+- Redimensionador de Imagem
+- Junção de Imagens
+- Rotação/Inversão de Imagem
+- Filtros de Imagem
+- Corte de Imagem
+- Conversor de Imagem para Base64
+- Conversor de Imagem para WebP
 
----
+### Ferramentas Úteis
 
-## 快速开始
+- Calculadora de IMC
+- Gerador de Código QR
+- Conversor de Unidades
+- Conversor de Tamanho de Bytes
+- Gerador de Senha Segura
+- Detector de Força de Senha
+- Calculadora de Diferença de Datas
+- Calculadora de Percentuais
+- Seletor Aleatório
+- Gerador de Números Aleatórios
 
-### 在线使用
+## Início Rápido
 
-直接访问 [JustHTMLs 网站](https://htmls.dev/) 即可使用所有工具。
+### Uso Online
 
-### 本地运行
+Acesse diretamente o [site Ferramentas HTML](https://htmls.dev/) para usar todas as ferramentas.
+
+### Execução Local
 
 ```bash
-# 克隆仓库
-git clone https://github.com/justhtmls/html-tools.git
-cd html-tools
+# Clone o repositório
+git clone https://github.com/theweewee/ferramentas-html.git
+cd ferramentas-html
 
-# 使用任意静态服务器运行
+# Use qualquer servidor estático
 python -m http.server 8000
-# 或
+# ou
 npx serve .
 ```
 
-然后在浏览器中访问 `http://localhost:8000`
+Em seguida, acesse `http://localhost:8000` no seu navegador.
 
-![](https://piggo5.oss-cn-shenzhen.aliyuncs.com/2026/iShot_2025-12-23_16.06.50.png)
+## Contribuindo com Ferramentas
 
----
+Bem-vindo às contribuições da comunidade! O processo para enviar uma nova ferramenta é muito simples:
 
-## 贡献工具
+### Método 1: Via GitHub Issues (Recomendado)
 
-我们欢迎社区贡献！提交新工具的流程非常简单：
+1. Crie sua ferramenta (arquivo HTML único)
+2. [Crie uma Issue de Envio de Ferramenta](https://github.com/justhtmls/html-tools/issues/new?template=tool-submission.md)
+3. Preencha as informações da ferramenta e cole o código
+4. Aguarde a revisão e mesclagem
 
-### 方式一：通过 GitHub Issues（推荐）
+### Método 2: Pull Request
 
-1. 创建你的工具（单文件 HTML）
-2. [创建工具提交 Issue](https://github.com/justhtmls/html-tools/issues/new?template=tool-submission.md)
-3. 填写工具信息并粘贴代码
-4. 等待审核通过后合并
+1. Faça um Fork do repositório `justhtmls/html-tools`
+2. Crie sua pasta de ferramenta no diretório `tools/`
+3. Crie os arquivos da ferramenta conforme os padrões
+4. Atualize o arquivo `index.json`
+5. Envie um Pull Request
 
-### 方式二：Pull Request
+## Padrões de Ferramentas
 
-1. Fork justhtmls/html-tools 仓库
-2. 在 `tools/` 目录下创建你的工具文件夹
-3. 按规范创建工具文件
-4. 更新 `index.json` 索引
-5. 提交 Pull Request
-
-### 工具规范
-
-每个工具必须包含：
+Cada ferramenta deve incluir:
 
 ```
 tools/
-  └── your-tool/
-      ├── index.html    # 工具详情页（介绍页面）
-      └── app.html      # 工具实体页（实际运行的工具）
+  └── sua-ferramenta/
+      ├── index.html    # Página de detalhes/introdução
+      └── app.html      # Página da ferramenta (funcionamento real)
 ```
 
-**设计原则：**
+### Princípios de Design:
 
-- 单文件 HTML，内联 CSS/JS
-- 不使用 React 或需要构建的技术
-- 从本地 assets/vendor 加载第三方库
-- 保持精简（建议 500 行以内）
-- 数据本地处理，保护隐私
+- Arquivo HTML único, CSS/JS integrados
+- Sem uso de React ou tecnologias que requerem construção
+- Carregue bibliotecas de terceiros de `assets/vendor`
+- Mantenha compacto (sugerido menos de 500 linhas)
+- Processe dados localmente, proteja privacidade
 
-详细内容请查看 [贡献指南](CONTRIBUTING.md)。
+Veja o [Guia de Contribuição](./CONTRIBUTING.md) para mais detalhes.
 
----
-
-## 项目结构
+## Estrutura do Projeto
 
 ```
-html-tools/
-├── index.html              # 主站门户首页
-├── index.json              # 工具索引文件
-├── CONTRIBUTING.md          # 贡献指南
-├── README.md               # 项目说明
-├── tools/                  # 工具目录
-│   └── tool-name/         # 单个工具文件夹
-│       ├── index.html     # 工具详情页
-│       └── app.html       # 工具实体页
-└── .github/
-    └── ISSUE_TEMPLATE/    # GitHub Issue 模板
-        ├── tool-submission.md
-        └── bug-report.md
+ferramentas-html/
+├── index.html              # Página inicial do site
+├── index.json              # Arquivo de índice de ferramentas
+├── CONTRIBUTING.md         # Guia de contribuição
+├── LICENSE                 # Licença MIT
+├── .github/                # Configurações do GitHub
+├── assets/                 # Recursos estáticos
+│   └── vendor/            # Bibliotecas de terceiros
+├── docs/                  # Documentação
+├── scripts/               # Scripts de automação
+├── tools/                 # Ferramentas HTML
+├── workers/               # Web Workers
+├── robots.txt             # Arquivo robots.txt
+├── sitemap.xml            # Mapa do site
+└── reference.html         # Página de referência
 ```
 
----
+## Roadmap de Desenvolvimento
 
-## 开发路线图
+- [x] Framework básico do website
+- [x] Sistema de índice de ferramentas
+- [x] Funcionalidade de busca e filtro
+- [x] Processo de envio de ferramentas
+- [ ] Sistema de usuário (favoritos, histórico)
+- [ ] Classificação e comentários de ferramentas
+- [ ] Funcionalidade de carregamento privado de ferramentas
+- [ ] Otimização para dispositivos móveis
 
-- [x] 基础网站框架
-- [x] 工具索引系统
-- [x] 搜索和过滤功能
-- [x] 工具提交流程
-- [ ] 用户系统（收藏、历史记录）
-- [ ] 工具评分和评论
-- [ ] 私人工具侧载功能
-- [ ] 移动端优化
+## Stack Tecnológico
 
----
+- HTML/CSS/JavaScript Puro
+  - Sem etapas de construção
+- GitHub Pages
+  - Hospedagem estática
+- GitHub Issues
+  - Processo de envio de ferramentas
 
-## 技术栈
+## Licença
 
-- **纯 HTML/CSS/JavaScript** - 无构建步骤
-- **GitHub Pages** - 静态托管
-- **GitHub Issues** - 工具提交流程
+Licença MIT - Veja o arquivo [LICENSE](./LICENSE) para detalhes.
 
----
+## Agradecimentos
 
-## 许可证
+Todos os contribuidores - Obrigado por suas contribuições!
 
-MIT License - 详见 [LICENSE](LICENSE) 文件
-
----
-
-## 鸣谢
-
-- 所有贡献者 - 感谢你们的贡献！
-
----
-
-<div align="center">
-
-**如果这个项目对你有帮助，请给它一个 Star ⭐**
-
-</div>
+Se este projeto foi útil para você, por favor considere dar uma estrela ⭐
